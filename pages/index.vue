@@ -1,7 +1,7 @@
 <template>
     <div>
         <section>
-            Server: NA - North America
+            {{ hello }}
             <form>
                 <input placeholder="Search for a player...">
             </form>
@@ -48,15 +48,17 @@
 <script>
     
     import { helper } from '~/plugins/helper.js';
-    
-    import leaderboard from '~/components/leaderboard.vue';
-    
+        
     export default {
 //        async fetch ({store, params}) {
 //            await store.dispatch('cpCollection', 'events')
 //        },
         components: {
-            leaderboard
+        },
+        data(){
+            return {
+                hello: "hello",
+            }
         },
         head () {
             console.log(this.$route.path);
