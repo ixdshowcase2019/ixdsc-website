@@ -1,0 +1,10 @@
+<template>
+    <nav>
+        <div>
+            home
+        </div>
+        <div>
+            about
+        </div>
+    </nav>
+</template>
