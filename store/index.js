@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-const token = '?token=e5df434f6f6874a1647d16b5d1aaac'
+const token = '?token=de91977af9eeee8b0f6434fb8784d5'
 
 export const state = () => ({
     //variables
-    apiurl: 'http://data.hypertt.cloud/',
-     //cockpit
-     singles: [],
-     collections: [],
+    apiurl: 'http://data.ixd-temp.xyz/',
+    //cockpit
+    singles: [],
+    collections: [],
 })
 
 export const actions = {

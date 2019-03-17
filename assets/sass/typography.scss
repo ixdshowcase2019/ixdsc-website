@@ -1,0 +1,103 @@
+@import '~/assets/sass/breakpoints.scss';
+/*default*/
+
+body{
+    font-weight: 400;
+}
+
+/*reset*/
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
+    span.p{
+        display: block;
+    }
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    
+}
+
+p, ul, ol{
+    &:first-child{
+        margin-top: 0;
+    }
+}
+
+p, ul, ol{
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+section.intro li {
+    margin-bottom: 0.8rem;
+}
+
+
+a{
+    color: inherit;
+}
+
+a:hover{
+}
+
+nav a{
+    text-decoration: none;
+}
+
+/*modular*/
+
+.mono{
+    &.bold{
+        font-weight: 700;
+    }
+}
+
+.caps{
+    text-transform: uppercase;
+}
+
+/*sizing*/
+
+.s1{
+    font-size: 162px;
+    line-height: 158px;
+}
+
+.s2{
+    font-size: 62px;
+    line-height: 74px;
+}
+
+.s3{
+    font-size: 15pt;
+}
+
+.s4{
+    font-size: 10pt;
+}
+
+.s5{
+    font-size: 9pt;
+}
+
+.s6{
+    font-size: 8pt;
+}
+
+/*weight*/
+
+.bold{
+    font-weight: 500;
+}
+
+.italic{
+    font-style: italic;
+}

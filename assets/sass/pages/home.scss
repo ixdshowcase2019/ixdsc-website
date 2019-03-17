@@ -1,3 +1,28 @@
 section{
-    
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 82px 24.7px);
+    grid-template-rows: auto;
+}
+
+#hero{
+    height: 100vh;
+    >*{
+        display: flex;
+        align-items: center;
+        grid-column: 3 / 16;
+    }
+}
+
+#intro{
+    height: 50vh;
+    >*{
+        grid-column: 14 / 22;
+    }
+}
+
+#intro img{
+    grid-column: 3 / 14;
+    justify-self: end;
 }
