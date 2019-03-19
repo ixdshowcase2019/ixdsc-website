@@ -1,41 +1,56 @@
 section{
     max-width: 1280px;
+    width: 100%;
     margin: auto;
+    padding: 50px;
 }
 
 #hero{
     height: 100vh;
-    width: 1080px;
+    max-width: 1080px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    .heading{
+        height: 100%;
+        width: 100%;
+    }
 }
 
 #intro{
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
+    margin-top: 50px;
+    padding: 100px 50px;
     >.inner{
-        width: 45%;
+        max-width: 1080px;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        >div{
+            max-width: 572px;
+        }
     }
     .text{
         margin-top: 40px;
-        font-size: 22px;
+        font-size: 26px;
+        line-height: 1.6;
     }
 }
 
 .highlight-container{
     position: relative;
     .highlight{
-        position: absolute;
         em{
             font-style: normal;
         }
     }
     .shadow{
+        position: absolute;
+        top: 0;
+        user-select: none;
         z-index: -1;
         color: transparent;
         em{
-            transform: rotate(-2deg) scale(1.1);
+            transform: rotate(-1.5deg) scaleY(0.9);
             display: inline-block;
             background: $blue;
         }
@@ -43,6 +58,13 @@ section{
 }
 
 #sponsors{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .heading{
+        text-align: center;
+    }
     .logos{
         grid-column: 3/22;
         display: flex;

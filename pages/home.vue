@@ -2,8 +2,13 @@
     <div>
         <navigation></navigation>
         <section id="hero">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="800" viewBox="0 -100 1080 800">
+            <svg class="heading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -50 800 700">
                 <defs>
+                    <style>
+                        svg{
+                            //user-select: none;
+                        }
+                    </style>
                     <path id="a" d="M.396.14h202.527v91.445H.396z"/>
                     <path id="c" d="M0 .052h16.18V15.67H0z"/>
                 </defs>
@@ -37,14 +42,16 @@
                 </g>
             </svg>
         </section>
-        <section id="intro">
+        <section id="intro" style="background: no-repeat url(dotgrid-lg.svg)">
             <div class="inner">
-                <h2 class="s2" v-html="p.intro_heading">            
-                </h2>
-                <div class="text highlight-container">
-                    <div class="highlight" v-html="p.intro_text">            
-                    </div>
-                    <div class="highlight shadow" v-html="p.intro_text">            
+                <div>
+                    <h2 class="heading s2" v-html="p.intro_heading">            
+                    </h2>
+                    <div class="text highlight-container">
+                        <div class="highlight" v-html="p.intro_text">            
+                        </div>
+                        <div class="highlight shadow" v-html="p.intro_text">            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -53,8 +60,8 @@
 
         </section>
         <section id="sponsors">
-            <h2>
-
+            <h2 class="heading hw">
+                These fun people are giving us money
             </h2>
             <div class="logos">
                 <img src="freshbooks.svg">

@@ -1,4 +1,6 @@
 @import '~/assets/sass/breakpoints.scss';
+@import '~/assets/sass/color.scss';
+
 
 @font-face{
     font-family: 'ClassicGrotesquePro-Light';
@@ -35,7 +37,7 @@
 
 body{
     font-weight: 400;
-    color: #020202;
+    color: $black;
     font-family: "Sentinel-Book";
 }
 
@@ -98,6 +100,11 @@ nav a{
 
 .caps{
     text-transform: uppercase;
+}
+
+.hw{
+    font-family: 'HandOfSean';
+    color: $grey;
 }
 
 /*sizing*/
