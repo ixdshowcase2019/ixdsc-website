@@ -47,7 +47,7 @@
                 <div>
                     <h2 class="heading s2" v-html="p.intro_heading">            
                     </h2>
-                    <div class="text highlight-container">
+                    <div class="text s4 highlight-container">
                         <div class="highlight" v-html="p.intro_text">            
                         </div>
                         <div class="highlight shadow" v-html="p.intro_text">            
