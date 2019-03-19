@@ -1,8 +1,42 @@
 @import '~/assets/sass/breakpoints.scss';
+
+@font-face{
+    font-family: 'ClassicGrotesquePro-Light';
+    src: url('~/static/ClassicGrotesquePro-Light.otf');
+}
+
+@font-face{
+    font-family: 'ClassicGrotesquePro-LightIt';
+    src: url('~/static/ClassicGrotesquePro-LightIt.otf');
+}
+
+@font-face{
+    font-family: 'ClassicGrotesquePro-SmBd';
+    src: url('~/static/ClassicGrotesquePro-SmBd.otf');
+}
+
+@font-face{
+    font-family: 'ClassicGrotesquePro-SmBdIt';
+    src: url('~/static/ClassicGrotesquePro-SmBdIt.otf');
+}
+
+@font-face{
+    font-family: 'HandOfSean';
+    src: url('~/static/HandOfSean.ttf');
+}
+
+@font-face{
+    font-family: 'Sentinel-Book';
+    src: url('~/static/Sentinel-Book.otf');
+}
+
+
 /*default*/
 
 body{
     font-weight: 400;
+    color: #020202;
+    font-family: "Sentinel-Book";
 }
 
 /*reset*/
@@ -11,6 +45,7 @@ h1, h2, h3, h4, h5, h6{
     margin: 0;
     font-weight: 500;
     font-size: 1rem;
+    font-family: 'ClassicGrotesquePro-SmBd';
     span.p{
         display: block;
     }
@@ -54,11 +89,12 @@ nav a{
 
 /*modular*/
 
-.mono{
-    &.bold{
-        font-weight: 700;
-    }
+.nav{
+    font-family: 'ClassicGrotesquePro-SmBd';
+    font-size: 14px;
+    letter-spacing: 2px;
 }
+
 
 .caps{
     text-transform: uppercase;

@@ -1,16 +1,17 @@
 <template>
-    <div class="nav">
+    <div class="nav caps">
         <nav>
             <div>
-                IXD SHOWCASE 2019
+                IXD Showcase 2019
             </div>
             <div>
-                STUDENTS
+                Graduates
             </div>
         </nav>
     </div>
 </template>
 
 <style lang="scss">
-    @import '~/assets/sass/components/navigation.scss'
+    @import '~/assets/sass/typography.scss';
+    @import '~/assets/sass/components/navigation.scss';
 </style>
