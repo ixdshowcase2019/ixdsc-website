@@ -1,6 +1,8 @@
 <template>
     <div>
         <navigation></navigation>
+        <div class="grid">
+        </div>
         <section id="hero">
             <svg class="heading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -50 800 700">
                 <defs>
@@ -18,9 +20,9 @@
                         <path d="M36.663 112l-4.635 72.47L31 200.507l272.336 62.159 19 4.335L328 178.49z" style="mix-blend-mode:multiply"/>
                     </g>
                     <text fill="#020202" font-size="162" letter-spacing="-4">
-                        <tspan x="35" y="280" font-family="ClassicGrotesquePro-SmBdIt" font-weight="500">IXD</tspan>
-                        <tspan x="35" y="440" font-family="ClassicGrotesquePro-SmBd" font-weight="500">Showcase</tspan>
-                        <tspan x="35" y="600"  font-style="italic" font-family="ClassicGrotesquePro-LightIt" font-weight="300">2019</tspan>
+                        <tspan x="35" y="280" font-family="ClassicGrotesquePro" font-weight="bold">IXD</tspan>
+                        <tspan x="35" y="440" font-family="ClassicGrotesquePro" font-weight="bold">Showcase</tspan>
+                        <tspan x="35" y="600"  font-style="italic" font-family="ClassicGrotesquePro" font-weight="300">2019</tspan>
                     </text>
                     
                     <text fill="#2E2E30" font-family="HandOfSean" font-size="20" transform="rotate(15 532.287 38)">
@@ -50,18 +52,67 @@
                     <div class="text s4 highlight-container">
                         <div class="highlight" v-html="p.intro_text">            
                         </div>
-                        <div class="highlight shadow" v-html="p.intro_text">            
+                        <div class="highlight shadow blue" v-html="p.intro_text">            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="deets">
-
+            <div class="inner">
+                <div>
+                    <h3 class="s3 light">
+                        When:
+                    </h3>
+                    <div class="display s2 highlight-container">
+                        <div class="highlight">
+                            April 17th
+                        </div>
+                        <div class="highlight shadow orange">
+                            <em>
+                                April 17th
+                            </em>
+                        </div>
+                    </div>
+                    <div class="s2 display italic">
+                        4:30PM - 7:30PM
+                    </div>
+                </div>
+                <div>
+                    <h3 class="s3 light">
+                        Where:
+                    </h3>
+                    <div class="display s2 highlight-container">
+                        <div class="highlight">
+                            1655 Dupont St #250
+                        </div>
+                        <div class="highlight shadow orange">
+                            <em>
+                                1655 Dupont St #250
+                            </em>
+                        </div>
+                    </div>
+                    <div class="s2 display italic">
+                        Toronto, ON M6P 3T1
+                    </div>
+                </div>
+                <div>
+                    <h3 class="display s2 highlight-container">
+                        <div class="highlight">
+                            Invitation Only
+                        </div>
+                        <div class="highlight shadow blue">
+                            <em>
+                                Invitation Only
+                            </em>
+                        </div>
+                    </h3>
+                </div>
+            </div>
         </section>
         <section id="sponsors">
-            <h2 class="heading hw">
-                These fun people are giving us money
+            <h2 class="heading hw s5">
+                Special thanks to our sponsors!
             </h2>
             <div class="logos">
                 <img src="freshbooks.svg">

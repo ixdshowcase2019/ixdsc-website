@@ -5,7 +5,8 @@
                 IXD Showcase 2019
             </div>
             <div>
-                Graduates
+                <nuxt-link class="disabled" to="/home">
+                </nuxt-link>
             </div>
         </nav>
     </div>

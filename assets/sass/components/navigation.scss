@@ -1,14 +1,23 @@
 .nav{
     position: fixed;
-    top:0;
+    z-index: 100;
     width: 100%;
     background: rgba(255,255,255,1);
-
     nav{
         display: flex;
         justify-content: space-between;
         max-width: 1280px;
         margin: auto;
         padding: 30px;
+        a{
+            &:after{
+                content: "Graduates";
+            }
+            &:hover{
+                &:after{
+                    content: "coming soon"
+                }
+            }
+        }
     }
 }

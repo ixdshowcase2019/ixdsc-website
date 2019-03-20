@@ -5,6 +5,10 @@ section{
     padding: 50px;
 }
 
+body{
+
+}
+
 #hero{
     height: 100vh;
     max-width: 1080px;
@@ -12,8 +16,8 @@ section{
     align-items: center;
     justify-content: flex-start;
     .heading{
-        height: 100%;
-        width: 100%;
+        height: 75%;
+//        width: 100%;
     }
 }
 
@@ -34,23 +38,21 @@ section{
     }
 }
 
-.highlight-container{
-    position: relative;
-    .highlight{
-        em{
-            font-style: normal;
+#deets{
+    background-image: url('/dotgrid-lg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 700px;
+    padding-bottom: 200px;
+    >.inner{
+        margin: auto;
+        max-width: 1080px;
+        display: flex;
+        flex-direction: column;
+        >div{
+            padding: 50px 0;
         }
-    }
-    .shadow{
-        position: absolute;
-        top: 0;
-        user-select: none;
-        z-index: -1;
-        color: transparent;
-        em{
-            transform: rotate(-1.5deg) scaleY(0.9);
-            display: inline-block;
-            background: $blue;
+        >div:nth-child(2n){
+            align-self: flex-end;
         }
     }
 }
@@ -62,10 +64,13 @@ section{
     justify-content: center;
     .heading{
         text-align: center;
+        margin-bottom: 30px;
     }
     .logos{
-        grid-column: 3/22;
         display: flex;
+        @include media('<medium'){
+            flex-direction: column;
+        }
         justify-content: space-between;
     }
 }
