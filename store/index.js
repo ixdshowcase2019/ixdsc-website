@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const token = '?token=de91977af9eeee8b0f6434fb8784d5'
+const token = '?token=2294f6678d41f455cd5858c3e07441'
 
 export const state = () => ({
     //variables
-    apiurl: 'http://data.ixd-temp.xyz/',
+    apiurl: 'http://data.ixdshowcase.com/',
     //cockpit
     singles: [],
     collections: [],
