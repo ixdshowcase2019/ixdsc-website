@@ -58,17 +58,6 @@
                 </div>
             </div>
         </section>
-        <section id="sponsors">
-            <h2 class="heading hw s5">
-                Special thanks to our sponsors!
-            </h2>
-            <div class="logos">
-                <img src="freshbooks.svg">
-                <img src="canon.svg">
-                <img src="ariagency.svg">
-                <img src="t-igroup.svg">
-            </div>
-        </section>
         <section id="deets">
             <div class="inner">
                 <div>
@@ -121,7 +110,17 @@
                 </div>
             </div>
         </section>
-        
+        <section id="specialthanks">
+            <h2 class="heading hw s5">
+                Special thanks to our sponsors!
+            </h2>
+            <div class="logos">
+                <img src="freshbooks.svg">
+                <img src="canon.svg">
+                <img src="ariagency.svg">
+                <img src="t-igroup.svg">
+            </div>
+        </section>
     </div>
 </template>
 
