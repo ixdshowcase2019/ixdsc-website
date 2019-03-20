@@ -116,7 +116,6 @@
             </h2>
             <div class="logos">
                 <img src="freshbooks.svg">
-                <img src="canon.svg">
                 <img src="ariagency.svg">
                 <img src="t-igroup.svg">
             </div>
