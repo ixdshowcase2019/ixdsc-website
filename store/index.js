@@ -4,7 +4,7 @@ const token = '?token=2294f6678d41f455cd5858c3e07441'
 
 export const state = () => ({
     //variables
-    apiurl: 'https://data.ixdshowcase.com/',
+    apiurl: 'http://data.ixdshowcase.com/',
     //cockpit
     singles: [],
     collections: [],
