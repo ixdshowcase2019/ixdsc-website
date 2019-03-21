@@ -10,12 +10,13 @@
         margin: auto;
         padding: 30px;
         a{
+            cursor: not-allowed;
             &:after{
                 content: "Graduate Projects";
             }
             &:hover{
                 &:after{
-                    content: "coming soon"
+                    content: "Projects coming soon";
                 }
             }
         }
