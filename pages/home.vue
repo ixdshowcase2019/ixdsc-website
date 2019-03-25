@@ -26,8 +26,8 @@
                     </text>
                     
                     <text fill="#2E2E30" font-family="HandOfSean" font-size="20" transform="rotate(15 532.287 38)">
-                        <tspan x="458" y="30">Sheridan</tspan>
-                        <tspan x="475" y="58">College</tspan>
+                        <tspan x="458" y="30">Sheridan College's</tspan>
+                        <tspan x="475" y="58">Interaction Design</tspan>
                     </text>
                     <g transform="rotate(1 -1427.808 15217.907)">
                         <mask id="b" fill="#fff">
@@ -51,8 +51,6 @@
                     </h2>
                     <div class="text s4 highlight-container">
                         <div class="highlight" v-html="p.intro_text">            
-                        </div>
-                        <div class="highlight shadow blue" v-html="p.intro_text">            
                         </div>
                     </div>
                 </div>
