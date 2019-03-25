@@ -6,7 +6,9 @@ section{
 }
 
 body{
-
+    background: url(~/static/grid.png);
+    background-repeat: repeat-y;
+    background-position: top center;
 }
 
 #hero{
@@ -30,7 +32,7 @@ body{
         display: flex;
         justify-content: flex-end;
         >div{
-            max-width: 572px;
+            max-width: 505px;
         }
     }
     .text{
