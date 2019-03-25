@@ -138,6 +138,9 @@
             p(){
                 return this.$store.getters.getSingle('home');
             }
+        },
+        head:{
+            title: "IXD Showcase 2019"
         }
 
     }
