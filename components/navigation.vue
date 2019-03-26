@@ -6,7 +6,7 @@
             </div>
             <div>
                 <nuxt-link to="/home">
-                    Graduates
+                    Coming soon
                 </nuxt-link>
             </div>
         </nav>
