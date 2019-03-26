@@ -6,6 +6,9 @@
     background-repeat: repeat-y;
     background-position: top center;
     nav{
+        img{
+            vertical-align: text-bottom;
+        }
         display: flex;
         justify-content: space-between;
         max-width: 1280px;
