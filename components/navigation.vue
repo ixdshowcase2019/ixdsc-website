@@ -6,7 +6,7 @@
             </div>
             <div>
                 <nuxt-link to="/home">
-                    Graduate Projects
+                    Graduates
                 </nuxt-link>
             </div>
         </nav>

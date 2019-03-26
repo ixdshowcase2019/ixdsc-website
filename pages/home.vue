@@ -44,7 +44,7 @@
                 </g>
             </svg>
         </section>
-        <section id="intro" style="background: no-repeat url(dotgrid-lg.svg)">
+        <section id="intro">
             <div class="inner">
                 <div>
                     <h2 class="heading s2" v-html="p.intro_heading">            
@@ -58,7 +58,7 @@
         </section>
         <section id="deets">
             <div class="inner">
-                <div>
+                <div id="when">
                     <h3 class="s3 light">
                         When:
                     </h3>
@@ -76,7 +76,8 @@
                         4:30PM - 7:30PM
                     </div>
                 </div>
-                <div>
+                <div id="where">
+                    <img src="arrow1.svg">
                     <h3 class="s3 light">
                         Where:
                     </h3>
@@ -94,10 +95,10 @@
                         Toronto, ON M6P 3T1
                     </div>
                 </div>
-                <div>
+                <div id="invitation">
                     <h3 class="display s2 highlight-container">
                         <div class="highlight">
-                            Invitation Only
+                            <a href="mailto:ixd.grad.show.2019@gmail.com">Invitation Only</a>
                         </div>
                         <div class="highlight shadow blue">
                             <em>
@@ -105,6 +106,9 @@
                             </em>
                         </div>
                     </h3>
+                    <a href="mailto:ixd.grad.show.2019@gmail.com">
+                        <img src="arrow2.svg">
+                    </a>
                 </div>
             </div>
         </section>
