@@ -61,10 +61,11 @@ body{
             display: flex;
             flex-direction: column;
         }
-        >div:nth-child(2n){
-            align-self: flex-end;
-        }
         >#where{
+            align-self: flex-end;
+            @include media('<medium'){
+                align-self: flex-start;
+            }
             >img{
                 align-self: flex-end;
                 @include media('<medium'){
