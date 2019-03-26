@@ -12,8 +12,16 @@
         margin: auto;
         padding: 25px;
         padding-bottom: 75px;
-        a{
+        .disabled{
             cursor: not-allowed;
+            &:after{
+                content: "Graduates";
+            }
+            &:hover{
+                &:after{
+                    content: "Coming Soon";
+                }
+            }
         }
     }
 }
