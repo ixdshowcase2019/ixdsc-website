@@ -22,7 +22,10 @@
                     <text fill="#020202" font-size="162" letter-spacing="-4">
                         <tspan x="35" y="280" font-family="ClassicGrotesquePro" font-weight="bold">IXD</tspan>
                         <tspan x="35" y="440" font-family="ClassicGrotesquePro" font-weight="bold">Showcase</tspan>
-                        <tspan x="35" y="600"  font-style="italic" font-family="ClassicGrotesquePro" font-weight="300">2019</tspan>
+                        <tspan x="35" y="600"  font-style="italic" font-family="ClassicGrotesquePro" font-weight="300">2</tspan>
+                        <tspan x="112" y="600"  font-style="italic" font-family="ClassicGrotesquePro" font-weight="300">0</tspan>
+                        <tspan x="182" y="600"  font-style="italic" font-family="ClassicGrotesquePro" font-weight="300">1</tspan>
+                        <tspan x="255" y="600"  font-style="italic" font-family="ClassicGrotesquePro" font-weight="300">9</tspan>
                     </text>
 
                     <text fill="#2E2E30" font-family="HandOfSean" font-size="20" transform="rotate(15 532.287 38)">
