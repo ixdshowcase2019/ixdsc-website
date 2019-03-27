@@ -100,9 +100,12 @@ body{
         @include media('<medium'){
             flex-direction: column;
         }
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         img{
             margin-top: 30px;
+            margin-left: 73px;
+            margin-right: 73px;
         }
     }
 }
