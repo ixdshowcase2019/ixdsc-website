@@ -18,10 +18,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    @include media('>content'){
+      padding-left:0px;
+    }
     .heading{
         height: 75%;
 //        width: 100%;
-    }
+  }
 }
 
 #intro{
