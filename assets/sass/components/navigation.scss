@@ -15,10 +15,12 @@
         margin: auto;
         padding: 25px;
         padding-bottom: 75px;
+
         .disabled{
             cursor: not-allowed;
+            display:none;
             &:after{
-                content: "Graduates";
+                content: "Grads";
             }
             &:hover{
                 &:after{
