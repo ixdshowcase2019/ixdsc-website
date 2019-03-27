@@ -24,9 +24,9 @@
                         <tspan x="35" y="440" font-family="ClassicGrotesquePro" font-weight="bold">Showcase</tspan>
                         <tspan x="35" y="600"  font-style="italic" font-family="ClassicGrotesquePro" font-weight="300">2019</tspan>
                     </text>
-                    
+
                     <text fill="#2E2E30" font-family="HandOfSean" font-size="20" transform="rotate(15 532.287 38)">
-                        <tspan x="458" y="30">Sheridan College's</tspan>
+                        <tspan x="458" y="30">Bachelor of </tspan>
                         <tspan x="475" y="58">Interaction Design</tspan>
                     </text>
                     <g transform="rotate(1 -1427.808 15217.907)">
@@ -47,10 +47,10 @@
         <section id="intro">
             <div class="inner">
                 <div>
-                    <h2 class="heading s2" v-html="p.intro_heading">            
+                    <h2 class="heading s2" v-html="p.intro_heading">
                     </h2>
                     <div class="text s4 highlight-container">
-                        <div class="highlight" v-html="p.intro_text">            
+                        <div class="highlight" v-html="p.intro_text">
                         </div>
                     </div>
                 </div>
@@ -117,9 +117,15 @@
                 Special thanks to our sponsors!
             </h2>
             <div class="logos">
-                <img src="freshbooks.svg">
+                <a href="https://www.freshbooks.com/" target=_blank>
+                  <img src="freshbooks.svg">
+                </a>
+                <a href="http://www.ariagency.ca/" target=_blank>
                 <img src="ariagency.svg">
+              </a>
+              <a href="https://tigroup.ca/" target=_blank>
                 <img src="t-igroup.svg">
+              </a>
             </div>
         </section>
     </div>
