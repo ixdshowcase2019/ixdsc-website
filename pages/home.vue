@@ -131,12 +131,14 @@
               </a>
             </div>
         </section>
+        <bottom></bottom>
     </div>
 </template>
 
 <script>
 
     import navigation from '~/components/navigation';
+    import bottom from '~/components/bottom';
 
     import { helper } from '~/plugins/helper.js';
 
@@ -145,7 +147,8 @@
             await store.dispatch('cpSingle', 'home')
         },
         components:{
-            navigation
+            navigation,
+            bottom
         },
         computed: {
             p(){
