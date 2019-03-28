@@ -36,6 +36,9 @@ body{
     padding: 100px 50px;
     max-width: 100%;
     width: 100%;
+    @include media('>xlarge'){
+      background-position: top -150px left -300px;
+    }
     >.inner{
         max-width: 1080px;
         margin: auto;
@@ -58,6 +61,10 @@ body{
     max-width: 100%;
     width: 100%;
     overflow: hidden;
+    @include media('>xlarge'){
+    background-position: bottom 100px left 700px;
+    padding-bottom: 350px;
+    }
     >.inner{
         margin: auto;
         max-width: 1080px;
