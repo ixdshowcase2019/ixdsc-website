@@ -9,10 +9,10 @@
             <nav>
                 <div>
                     IXD Showcase 2019
-                    <!-- <img v-if="route=='home'" src="star.svg"> -->
+                    <!-- <img v-if="route=='/'" src="star.svg"> -->
                 </div>
                 <div>
-                    <nuxt-link class="disabled" to="/home">
+                    <nuxt-link class="disabled" to="/">
                     </nuxt-link>
                 </div>
             </nav>
