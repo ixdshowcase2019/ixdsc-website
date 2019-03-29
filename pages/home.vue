@@ -20,7 +20,7 @@
                         <path d="M36.663 112l-4.635 72.47L31 200.507l272.336 62.159 19 4.335L328 178.49z" style="mix-blend-mode:multiply"/>
                     </g>
                     <text fill="#020202" font-size="162" letter-spacing="-4">
-                        <tspan x="35" y="280" font-family="ClassicGrotesquePro" font-weight="bold">IXD</tspan>
+                        <tspan x="35" y="280" font-family="ClassicGrotesquePro" font-weight="bold" class="italic">IXD</tspan>
                         <tspan x="35" y="440" font-family="ClassicGrotesquePro" font-weight="bold">Showcase</tspan>
                         <tspan x="35" y="600"  font-style="italic" font-family="ClassicGrotesquePro" font-weight="300">2</tspan>
                         <tspan x="112" y="600"  font-style="italic" font-family="ClassicGrotesquePro" font-weight="300">0</tspan>
@@ -62,7 +62,7 @@
         <section id="deets">
             <div class="inner">
                 <div id="when">
-                    <h3 class="s3 light">
+                    <h3 class="s3 light italic">
                         When:
                     </h3>
                     <div class="display s2 highlight-container">
@@ -76,12 +76,12 @@
                         </div>
                     </div>
                     <div class="s2 display italic">
-                        4:30PM - 7:30PM
+                        5:00PM - 8:00PM
                     </div>
                 </div>
                 <div id="where">
                     <img src="arrow1.svg">
-                    <h3 class="s3 light">
+                    <h3 class="s3 light italic">
                         Where:
                     </h3>
                     <div class="display s2 highlight-container">
