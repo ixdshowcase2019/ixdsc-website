@@ -24,7 +24,7 @@ export const actions = {
     async cpCollection({state, commit}, slug) {
         //console.log('apiCollection:\t' + slug);
         await Promise.all([
-            axios.get(state.apiurl + 'cockpit/api/collections/collection/' + slug + token).then(({data}) => data),
+            axios.get(state.apiurl + 'cockpit/api/collections/listCollections/' + slug + token).then(({data}) => data),
             axios.get(state.apiurl + 'cockpit/api/collections/get/' + slug + token).then(({data}) => data)
         ]).then((preturns) => {commit('pushCollection',  { ...preturns[0], ...preturns[1], slug })});
     },
