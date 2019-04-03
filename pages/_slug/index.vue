@@ -2,7 +2,29 @@
     <div>
         <navigation></navigation>
         <section>
-            <img :src="apiurl + grad.hero_image.path">
+            <div>
+                <div class="border">
+                    {{grad.project_theme}}
+                </div>
+                <div class="border" v-for="(t, i) in grad.project_skills.split(',')" v-bind:key="'tag'+i">
+                    {{t}}
+                </div>
+            </div>
+            <div>
+                <h1>
+                    {{grad.project_name}}
+                </h1>
+                <h2>
+                    {{grad.first_name + " " + grad.last_name}}
+                </h2>
+            </div>
+            <div v-html="grad.project_desc_short"></div>
+            <video v-if="grad.hero_video" controls autoplay muted>
+                <source :src="apiurl + grad.hero_video" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <img v-else :src="apiurl + grad.hero_image.path">
+            
             {{grad.project_title}}
             
         </section>
@@ -27,7 +49,7 @@
         },
         head(){
             return{
-                title: this.grad.name + " - IXD Showcase 2019"
+                title: this.grad.project_name + " - IXD Showcase 2019"
             }
         },
         computed: {
