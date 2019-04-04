@@ -34,12 +34,24 @@
     </div>
 </template>
 
+<script>
+    export default{
+        head:{
+            title: "You're Invited to the Sheridan College IXD Showcase 2019"
+        }
+    }
+</script>
+
 <style>
     html,body{
         margin: 0;
         padding: 0;
         font-size: 16px;
         font-family: Georgia, Times, "Times New Roman", serif;
+    }
+    a{
+        color: #3FA9F6;
+        font-style: italic;
     }
     .main{
         margin: auto;
@@ -49,7 +61,7 @@
         background: #003767;
         color: white;
         text-align: center;
-        padding: 100px 0;
+        padding: 50px 0;
     }
     .logos{
         padding-top: 25px;
