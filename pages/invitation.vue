@@ -47,10 +47,10 @@
         background: #003767;
         color: white;
         text-align: center;
+        padding: 100px 0;
     }
     .logos{
         width: 400px;
-        padding: 100px 0;
         margin: auto;
         display: flex;
         justify-content: space-around;
