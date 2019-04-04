@@ -50,8 +50,10 @@
     }
     .logos{
         width: 400px;
+        padding: 100px 0;
         margin: auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
 </style>
