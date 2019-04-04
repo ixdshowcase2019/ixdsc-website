@@ -21,13 +21,13 @@
             IXD Showcase 2019 is sponsored by
             <div class="logos">
                 <a href="https://www.freshbooks.com/" target=_blank>
-                    <img src="freshbooks.svg">
+                    <img src="freshbooks.svg" width:"100px">
                 </a>
                 <a href="http://www.ariagency.ca/" target=_blank>
-                    <img src="ariagency.svg">
+                    <img src="ariagency.svg" width:"100px">
                 </a>
                 <a href="https://tigroup.ca/" target=_blank>
-                    <img src="t-igroup.svg">
+                    <img src="t-igroup.svg" width:"100px">
                 </a>
             </div>
         </div>
@@ -53,7 +53,7 @@
         width: 400px;
         margin: auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 </style>
