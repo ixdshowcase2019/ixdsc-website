@@ -50,6 +50,7 @@
         padding: 100px 0;
     }
     .logos{
+        padding-top: 25px;
         width: 400px;
         margin: auto;
         display: flex;
