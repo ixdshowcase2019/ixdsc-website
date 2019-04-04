@@ -35,11 +35,17 @@
 </template>
 
 <style>
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
     .main{
+        margin: auto;
         width: 600px;
     }
     .footer{
         background: #003767;
+        color: white;
         text-align: center;
     }
     .logos{
