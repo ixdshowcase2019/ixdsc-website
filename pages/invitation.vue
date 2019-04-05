@@ -55,7 +55,8 @@
     }
     .main{
         margin: auto;
-        width: 600px;
+        max-width: 600px;
+        width: 100%;
     }
     .footer{
         background: #003767;
@@ -70,5 +71,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .main img {
+      width: 100%;
     }
 </style>
