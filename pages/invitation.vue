@@ -11,11 +11,11 @@
                 </a>
             </div>
             <a href="https://www.eventbrite.ca/e/sheridan-college-ixd-showcase-2019-tickets-59598414462">
-                <img src="invite-header.png" width="100%" class="inviteHeader">
+                <img src="invite-header.png" class="inviteHeader">
             </a>
             <a href="https://www.eventbrite.ca/e/sheridan-college-ixd-showcase-2019-tickets-59598414462">
-                <img src="youreinvited.png" width="100%" class="youreinvited">
-                <img src="youreinvited-mobile.png" width="100%" class="youreinvited-mobile">
+                <img src="youreinvited.png" class="youreinvited">
+                <img src="youreinvited-mobile.png" class="youreinvited-mobile">
             </a>
             <p>
                 To mix and mingle with Sheridan's latest cohort of interaction designers.
@@ -65,6 +65,10 @@
 </script>
 
 <style>
+  * {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
     html,body{
         margin: 0;
         padding: 0;
@@ -79,7 +83,7 @@
         margin: auto;
         max-width: 600px;
         width: 100%;
-        padding-bottom: 50px;
+        padding: 0px 15px 50px 15px;
     }
     .header{
       position:relative;
@@ -117,13 +121,22 @@
     }
     .inviteHeader{
       margin-bottom: 55px;
+      width:calc(100%-30px);
     }
     .youreinvited{
       margin-bottom: 25px;
       display:none;
+      width:calc(100%-30px);
+    }
+    .youreinvited-mobile{
+      width:calc(100%-30px);
     }
     .rsvpnow{
       display:none;
+      width:calc(100%-30px);
+    }
+    .rsvpnow-mobile{
+      width:calc(100%-30px);
     }
     .main p{
       line-height: 24px;
