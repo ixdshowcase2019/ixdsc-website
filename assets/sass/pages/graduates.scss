@@ -1,3 +1,14 @@
 .main{
     width: auto;
 }
+
+.grid{
+    width: 1080px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .griditem{
+        width: 33%;
+        flex-grow: 1;
+    }
+}
