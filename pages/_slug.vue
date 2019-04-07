@@ -24,13 +24,13 @@
                 Your browser does not support the video tag.
             </video>
             <!-- <img v-else :src="apiurl + grad.hero_image.path"> -->
-            <img v-else :src="grad.hero_image.path" />
+            <img v-else class="headerimage" :src="grad.hero_image.path" />
 
             <!-- {{grad.project_title}} -->
 
             <div class="content why">
               <div class="text">
-                  <p>Why</p>
+                  <h2 class="s4 italic q">Why</h2>
                   {{grad.why}}
               </div>
               <div class="image">
@@ -40,7 +40,7 @@
             </div>
             <div class="content how">
               <div class="text">
-                  <p>How</p>
+                  <h2 class="s4 italic q">How</h2>
                   {{grad.how}}
               </div>
               <div class="image">
@@ -50,7 +50,7 @@
             </div>
             <div class="content what">
               <div class="text">
-                  <p>What</p>
+                  <h2 class="s4 italic q">What</h2>
                   {{grad.what}}
               </div>
               <div class="image">

@@ -57,8 +57,10 @@ h1.s2{
   text-decoration: underline;
 }
 
-.main > img{
-  width: 100%;
+.main{
+  img, video{
+    width: 100%;
+  }
 }
 
 .content {
@@ -73,6 +75,10 @@ h1.s2{
   font-size: 18px;
   line-height: 32px;
   color: $grey;
+}
+
+.q{
+  color: #000000;
 }
 
 .content.how .image{
