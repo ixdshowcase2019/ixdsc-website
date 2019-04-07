@@ -8,7 +8,7 @@
             <div class="controls">
 
             </div>
-            <div class="grid">
+            <div class="grid light">
                 <div v-for="(g, i) in grads" v-bind:key="'grad'+i" class="griditem">
                     <img :src="apiurl + g.thumb">
                     <div>
