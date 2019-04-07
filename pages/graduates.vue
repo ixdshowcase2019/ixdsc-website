@@ -10,7 +10,7 @@
             </div>
             <div class="grid light">
                 <div v-for="(g, i) in grads" v-bind:key="'grad'+i" class="griditem">
-                    <img :src="apiurl + g.thumb">
+                    <img v-if="" :src="g.thumb ? apiurl + g.thumb.path : 'hello'">
                     <div>
                         <h1 class="s4">
                             {{g.project_name}}
