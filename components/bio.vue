@@ -5,7 +5,8 @@
                 <img class="profileimage" v-if="g.profile_image" :src="g.profile_image.path">
                 <img class="profileimage" v-else src="https://dummyimage.com/200x200/000/fff">
                 <div class="">
-                    <a :href="helper.linkify(this.g.portfolio)">{{helper.unlinkify(this.g.portfolio)}}</a>
+                    <a :href="helper.linkify(g.portfolio)">{{helper.unlinkify(g.portfolio)}}</a>
+                    <!-- <a :href="helper.linkify(g.portfolio)">{{g.portfolio}}</a> -->
                 </div>
                 <div class="">
                     <a :href="'mailto:'+g.email">{{g.email}}</a>
@@ -68,5 +69,9 @@
 </script>
 
 <style lang="scss" scoped>
+    @import '~/assets/sass/global.scss';
+    @import '~/assets/sass/color.scss';
+    @import '~/assets/sass/breakpoints.scss';
+    @import '~/assets/sass/typography.scss';
     @import '~/assets/sass/components/bio.scss';
 </style>

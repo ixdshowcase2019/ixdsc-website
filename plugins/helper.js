@@ -26,11 +26,11 @@ export const helper = {
     unlinkify: function(s){
         var prefix1 = 'http://';
         var prefix2 = 'https://';
-        if (s.substr(0, prefix1.length) == prefix1){
-            return s.splice(0, prefix1.length)
+        if (""+s.substr(0, prefix1.length) == prefix1){
+            return s.slice(prefix1.length)
         }
-        if (s.substr(0, prefix2.length) == prefix2){
-            return s.splice(0, prefix2.length)
+        if (""+s.substr(0, prefix2.length) == prefix2){
+            return s.slice(prefix2.length)
         }
         return s;
     }
