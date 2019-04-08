@@ -23,10 +23,7 @@
                 <source :src="apiurl + grad.hero_video" type="video/webm">
                 Your browser does not support the video tag.
             </video>
-            <!-- <img v-else :src="apiurl + grad.hero_image.path"> -->
-            <img v-else class="headerimage" :src="grad.hero_image.path" />
-
-            <!-- {{grad.project_title}} -->
+            <img v-else :src="apiurl + grad.hero_image.path">
 
             <div class="content why">
               <div class="text">
@@ -34,8 +31,7 @@
                   {{grad.why}}
               </div>
               <div class="image">
-                  <!-- when done change to : <img :src="apiurl + grad.why_image.path"> -->
-                  <img :src="grad.why_image.path">
+                  <img :src="apiurl + grad.why_image.path">
               </div>
             </div>
             <div class="content how">
@@ -44,8 +40,7 @@
                   {{grad.how}}
               </div>
               <div class="image">
-                  <!-- when done change to : <img :src="apiurl + grad.why_image.path"> -->
-                  <img :src="grad.how_image.path">
+                 <img :src="apiurl + grad.how_image.path">
               </div>
             </div>
             <div class="content what">
@@ -54,8 +49,7 @@
                   {{grad.what}}
               </div>
               <div class="image">
-                  <!-- when done change to : <img :src="apiurl + grad.why_image.path"> -->
-                  <img :src="grad.what_image.path">
+                  <img :src="apiurl + grad.what_image.path">
               </div>
             </div>
 
