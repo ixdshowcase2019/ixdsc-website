@@ -7,11 +7,7 @@
         </div>
         <div class="nav caps">
             <nav>
-              <a href="/home">IXD Showcase 2019</a>
-                <div>
-                    <nuxt-link class="disabled" to="/">
-                    </nuxt-link>
-                </div>
+              <nuxt-link to="/">IXD Showcase 2019</nuxt-link>
             </nav>
         </div>
     </div>
