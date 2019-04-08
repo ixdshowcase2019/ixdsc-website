@@ -2,7 +2,6 @@
     <div>
         <navigation></navigation>
         <section class="main">
-
           <h1 class="display s2 highlight-container">
               <div class="highlight">
                   <span class="italic">Graduate</span> Projects
@@ -13,11 +12,14 @@
                   </em>
               </div>
           </h1>
+          <div class="filter">
+            <img src="pick_3_filter.svg">
             <div class="controlsContainer">
-                <div class="controls" v-for="(tag, i) in taglist" :key="'tag'+i" v-on:click="toggleTag(tag)" :style="{border: tags.find(t=>t == tag) ? '1px solid black' : '0'}">
-                    {{tag}}
-                </div>
+                <div class="controls" v-for="(tag, i) in taglist" :key="'tag'+i" v-on:click="toggleTag(tag)" :style="{background: tags.find(t=>t == tag) ? '#76BEF8' : '0'}">
+            {{tag}}
+              </div>
             </div>
+          </div>
             <div class="grid light">
                 <div v-for="(g, i) in selection(tags)" v-bind:key="'grad'+i" class="griditem">
                     <nuxt-link :to="g.slug">
