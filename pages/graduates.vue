@@ -28,6 +28,9 @@
                         </div>
                     </div>
                 </div>
+                <div v-if="selection(tags).length == 0" class="">
+                    Oops! Try a different combination of tags.
+                </div>
             </div>
         </section>
         <bottom></bottom>
