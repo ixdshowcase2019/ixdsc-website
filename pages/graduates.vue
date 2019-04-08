@@ -12,8 +12,8 @@
             </div>
             <div class="grid light">
                 <div v-for="(g, i) in selection(tags)" v-bind:key="'grad'+i" class="griditem">
-                    <img :src="g.thumb ? apiurl + g.thumb.path : 'hello'">
-                    <div>
+                    <img :src="g.thumb ? apiurl + g.thumb.path : 'hello'" width="313px">
+                    <div class="info">
                         <h1 class="s4">
                             {{g.project_name}}
                         </h1>
@@ -22,9 +22,11 @@
                         </h2>
                         <div>
                             {{g.project_theme}}
-                            <span v-for="(t, i) in g.project_skills.split(',')" v-bind:key="'tag'+i">
-                                / {{t}}
-                            </span>
+                            <div>
+                                <span v-for="(t, i) in g.project_skills.split(',')" v-bind:key="'tag'+i">
+                                    <span v-if="i>0">/</span> {{t}}
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
