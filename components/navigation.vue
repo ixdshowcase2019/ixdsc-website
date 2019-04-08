@@ -24,7 +24,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import '~/assets/sass/typography.scss';
     @import '~/assets/sass/components/navigation.scss';
 </style>

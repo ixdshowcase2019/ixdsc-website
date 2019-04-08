@@ -67,6 +67,6 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import '~/assets/sass/components/bio.scss';
 </style>
