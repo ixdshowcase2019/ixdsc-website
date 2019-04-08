@@ -1,26 +1,68 @@
 <template>
-    <div>
-        <div class="left">
-            <img :src="g.profile_image"
-        </div>
-        <div class="right">
-            <div class="s2 display italic">
-                {{g.first_name}} {{g.last_name}}
+    <div class="modal">
+        <div class="bio">
+            <div class="left">
+                <img class="profileimage" v-if="g.profile_image" :src="g.profile_image.path">
+                <img class="profileimage" v-else src="https://dummyimage.com/200x200/000/fff">
+                <div class="">
+                    <a :href="helper.linkify(this.g.portfolio)">{{helper.unlinkify(this.g.portfolio)}}</a>
+                </div>
+                <div class="">
+                    <a :href="'mailto:'+g.email">{{g.email}}</a>
+                </div>
+                <div class="social">
+                    <a v-if="g.twitter" :href="'http://twitter.com/'+g.twitter">
+                        <img src="twitter.png">
+                    </a>
+                    <a v-if="g.linkedin" :href="helper.linkify(g.linkedin)">
+                        <img src="linkedin.png">
+                    </a>
+                    <a v-if="g.instagram" :href="'http://instagram.com/'+g.instagram">
+                        <img src="instagram.png">
+                    </a>
+                    <a v-if="g.behance" :href="helper.linkify(g.behance)">
+                        <img src="behance.png">
+                    </a>
+                    <a v-if="g.dribbble" :href="helper.linkify(g.dribbble)">
+                        <img src="dribbble.png">
+                    </a>
+                    <a v-if="g.github" :href="helper.linkify(g.github)">
+                        <img src="github.png">
+                    </a>
+                    <a v-if="g.medium" :href="helper.linkify(g.medium)">
+                        <img src="medium.png">
+                    </a>
+                    <a v-if="g.other_social" :href="helper.linkify(g.other_social)">
+                        <img src="other_social.png">
+                    </a>
+                </div>
             </div>
-            <div class="s4 display">
-                Bio
-            </div>
-            <div>
-                {{g.bio_long}}
+            <div class="right">
+                <div class="s2 display italic">
+                    {{g.first_name}} {{g.last_name}}
+                </div>
+                <div class="s4 display">
+                    Bio
+                </div>
+                <div>
+                    {{g.bio_long}}
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+
+    import { helper } from '~/plugins/helper.js';
+
     export default{
         props: ['g'],
-
+        data(){
+            return{
+                helper: helper,
+            }
+        }
 
     }
 </script>

@@ -1,7 +1,8 @@
 <template>
     <div>
         <navigation></navigation>
-        <bio :g="grad"></bio>
+        <div class="shade" v-if="modal" v-on:click="showModal()"></div>
+        <bio v-if="modal" :g="grad"></bio>
         <section class="main">
             <div class="borderContainer">
                 <div class="border">
@@ -71,6 +72,11 @@
         async fetch ({store, params}) {
             await store.dispatch('cpCollection', 'grads')
         },
+        data(){
+            return{
+                modal: false,
+            }
+        },
         components:{
             navigation,
             bio,
@@ -83,7 +89,8 @@
         },
         methods:{
             showModal(){
-
+                console.log("modal");
+                this.modal = !this.modal;
             }
         },
         computed: {
