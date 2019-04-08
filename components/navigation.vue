@@ -7,10 +7,7 @@
         </div>
         <div class="nav caps">
             <nav>
-                <div>
-                    IXD Showcase 2019
-                    <!-- <img v-if="route=='/'" src="star.svg"> -->
-                </div>
+              <a href="/home">IXD Showcase 2019</a>
                 <div>
                     <nuxt-link class="disabled" to="/">
                     </nuxt-link>

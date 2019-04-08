@@ -1,16 +1,58 @@
+section{
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    position: relative;
+}
+
+
+body{
+    background: url(~/static/grid.png);
+    background-repeat: repeat-y;
+    background-position: top center;
+    @include media('<medium'){
+      background: url(~/static/grid_mobile.png);
+      background-position: 45px;
+      background-repeat: repeat-y;
+    }
+}
+
 .main{
     width: auto;
 }
 
 .grid{
-    width: 1080px;
-    margin: auto;
+    width:1080px;
+    margin:auto;
     display: flex;
     flex-wrap: wrap;
     .griditem{
         width: 33%;
+        margin-bottom: 62px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
+}
+
+
+.controlsContainer{
+  width: 60%;
+  margin: 32px 32px 32px 0px;
+}
+
+.controlsContainer:first-child{
+  margin-left: 0px;
+}
+
+.controls {
+  display: inline-block;
+  font-family: 'ClassicGrotesquePro';
+  font-style: italic;
+  font-size: 20px;
+  color: $black;
+  margin: 0 10px;
+  padding: 8px 20px;
+  border: 1px solid $black;
 }
