@@ -21,7 +21,7 @@
             </div>
           </div>
             <div class="grid light">
-                <div v-for="(g, i) in selection(tags)" v-bind:key="'grad'+i" class="griditem">
+                <div v-for="(g, i) in selection(tags).concat().sort((a,b)=>a.first_name < b.first_name ? -1 : 1)" v-bind:key="'grad'+i" class="griditem">
                     <nuxt-link :to="g.slug">
                         <img :src="g.thumb ? apiurl + g.thumb.path : 'hello'" width="313px">
                     </nuxt-link>
