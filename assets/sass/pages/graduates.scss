@@ -24,26 +24,35 @@ body{
 }
 
 .grid{
-    width:1080px;
+    max-width:1080px;
     margin:auto;
-    display: inline-flex;
+    display:flex;
     flex-wrap: wrap;
+    align-content: space-between;
     @include media('<medium'){
-      display: inline-block;
+      max-width:100%;
   }
     .griditem{
         width: 33%;
         margin-bottom: 62px;
         display: inline-flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        @include media('<large'){
+          width:50%;
+      }
+        @include media('<medium'){
+          width:100%;
+      }
+
+
     }
 }
 
 
 .controlsContainer{
   width: 60%;
-  margin: 16px 32px 32px 0px;
+  margin: 16px 32px 64px 0px;
   @include media('<medium'){
     width: 100%;
   }
@@ -57,6 +66,7 @@ body{
   color: $black;
   margin: 11px 10px;
   padding: 8px 20px;
+  cursor: pointer;
   border: 2px solid $black;
 }
 
@@ -64,6 +74,7 @@ body{
     align-self: flex-end;
     @include media('<medium'){
         align-self: flex-start;
+        display: none;
     }
     img{
       margin-left: 40%;
