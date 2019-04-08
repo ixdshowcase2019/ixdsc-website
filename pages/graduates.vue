@@ -2,11 +2,19 @@
     <div>
         <navigation></navigation>
         <section class="main">
-            <h1 class="s2">
-                <span class="italic">Graduate</span> Projects
-            </h1>
-            <div class="controls">
-                <div v-for="(tag, i) in taglist" :key="'tag'+i" v-on:click="toggleTag(tag)" :style="{border: tags.find(t=>t == tag) ? '1px solid black' : '0'}">
+
+          <h1 class="display s2 highlight-container">
+              <div class="highlight">
+                  <span class="italic">Graduate</span> Projects
+              </div>
+              <div class="highlight shadow blue">
+                  <em>
+                      Graduate Projects
+                  </em>
+              </div>
+          </h1>
+            <div class="controlsContainer">
+                <div class="controls" v-for="(tag, i) in taglist" :key="'tag'+i" v-on:click="toggleTag(tag)" :style="{border: tags.find(t=>t == tag) ? '1px solid black' : '0'}">
                     {{tag}}
                 </div>
             </div>
@@ -112,7 +120,7 @@
             apiurl(){
                 return this.$store.getters.apiurl;
             },
-            
+
         },
 
     }
