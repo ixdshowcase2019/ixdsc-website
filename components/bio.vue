@@ -12,28 +12,28 @@
                     <a :href="'mailto:'+g.email">{{g.email}}</a>
                 </div>
                 <div class="social">
-                    <a v-if="g.twitter" :href="'http://twitter.com/'+g.twitter">
+                    <a v-if="g.twitter" :href="'http://twitter.com/'+g.twitter" target="_blank">
                         <img src="twitter.png">
                     </a>
-                    <a v-if="g.linkedin" :href="helper.linkify(g.linkedin)">
+                    <a v-if="g.linkedin" :href="helper.linkify(g.linkedin)" target="_blank">
                         <img src="linkedin.png">
                     </a>
-                    <a v-if="g.instagram" :href="'http://instagram.com/'+g.instagram">
+                    <a v-if="g.instagram" :href="'http://instagram.com/'+g.instagram" target="_blank">
                         <img src="instagram.png">
                     </a>
-                    <a v-if="g.behance" :href="helper.linkify(g.behance)">
+                    <a v-if="g.behance" :href="helper.linkify(g.behance)" target="_blank">
                         <img src="behance.png">
                     </a>
-                    <a v-if="g.dribbble" :href="helper.linkify(g.dribbble)">
+                    <a v-if="g.dribbble" :href="helper.linkify(g.dribbble)" target="_blank">
                         <img src="dribbble.png">
                     </a>
-                    <a v-if="g.github" :href="helper.linkify(g.github)">
+                    <a v-if="g.github" :href="helper.linkify(g.github)" target="_blank">
                         <img src="github.png">
                     </a>
-                    <a v-if="g.medium" :href="helper.linkify(g.medium)">
+                    <a v-if="g.medium" :href="helper.linkify(g.medium)" target="_blank">
                         <img src="medium.png">
                     </a>
-                    <a v-if="g.other_social" :href="helper.linkify(g.other_social)">
+                    <a v-if="g.other_social" :href="helper.linkify(g.other_social)" target="_blank">
                         <img src="other_social.png">
                     </a>
                 </div>
