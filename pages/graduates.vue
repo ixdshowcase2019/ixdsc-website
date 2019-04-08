@@ -17,18 +17,21 @@
             <div class="controlsContainer">
                 <div class="controls" v-for="(tag, i) in taglist" :key="'tag'+i" v-on:click="toggleTag(tag)" :style="{background: tags.find(t=>t == tag) ? '#76BEF8' : '0'}">
             {{tag}}
-              </div>
+                </div>
+                <input v-model="search" placeholder="Search">
             </div>
           </div>
             <div class="grid light">
-                <div v-for="(g, i) in selection(tags).concat().sort((a,b)=>a.first_name < b.first_name ? -1 : 1)" v-bind:key="'grad'+i" class="griditem">
+                <div v-for="(g, i) in helper.shuffle(selection(tags).concat())" v-bind:key="g.first_name+'-'+g.last_name" class="griditem">
                     <nuxt-link :to="g.slug">
                         <img :src="g.thumb ? apiurl + g.thumb.path : 'hello'" width="313px">
                     </nuxt-link>
                     <div class="info">
-                        <h1 class="s4">
-                            {{g.project_name}}
-                        </h1>
+                        <nuxt-link :to="g.slug">
+                            <h1 class="s4">
+                                {{g.project_name}}
+                            </h1>
+                        </nuxt-link>
                         <h2 class="s5">
                             {{g.first_name}} {{g.last_name}}
                         </h2>
@@ -82,7 +85,9 @@
                     "UX",
                     "Visual Design",
                     "3D"
-                ]
+                ],
+                search: '',
+                helper: helper
             }
         },
         head(){
@@ -104,7 +109,15 @@
                 }
             },
             selection(tags){
-                return this.tagfilter(this.grads, tags, tags.length);
+                if(!this.search){
+                    return this.tagfilter(this.grads, tags, tags.length);
+                }
+                if(this.search){
+                    this.tags = [];
+                    return this.grads.filter((project)=>{
+                        return project.project_name.toLowerCase().match(this.search.toLowerCase()) || project.first_name.toLowerCase().match(this.search.toLowerCase()) || project.last_name.toLowerCase().match(this.search.toLowerCase()) 
+                    })
+                }
             },
             tagfilter(a, tags, cd){
                 if(cd <= 0){
@@ -115,7 +128,7 @@
                     console.log(a);
                     return this.tagfilter(a.filter(g=>g.project_skills.split(", ").find(t=>t == tags[tags.length - cd])), tags, cd-1)
                 }
-            }
+            },
         },
         computed: {
             grads(){
