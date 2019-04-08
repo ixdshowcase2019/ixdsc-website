@@ -12,7 +12,9 @@
             </div>
             <div class="grid light">
                 <div v-for="(g, i) in selection(tags)" v-bind:key="'grad'+i" class="griditem">
-                    <img :src="g.thumb ? apiurl + g.thumb.path : 'hello'" width="313px">
+                    <nuxt-link :to="g.slug">
+                        <img :src="g.thumb ? apiurl + g.thumb.path : 'hello'" width="313px">
+                    </nuxt-link>
                     <div class="info">
                         <h1 class="s4">
                             {{g.project_name}}

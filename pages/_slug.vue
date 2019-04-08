@@ -1,6 +1,7 @@
 <template>
     <div>
         <navigation></navigation>
+        <bio :g="grad"></bio>
         <section class="main">
             <div class="borderContainer">
                 <div class="border">
@@ -14,7 +15,7 @@
                 <h1 class="s2">
                     {{grad.project_name}}
                 </h1>
-                <h4 class="studentName">
+                <h4 class="studentName" v-on:click="showModal()">
                     {{grad.first_name + " " + grad.last_name}}
                 </h4>
             </div>
@@ -61,6 +62,7 @@
 <script>
 
     import navigation from '~/components/navigation';
+    import bio from '~/components/bio';
     import bottom from '~/components/bottom';
 
     import { helper } from '~/plugins/helper.js';
@@ -71,11 +73,17 @@
         },
         components:{
             navigation,
+            bio,
             bottom
         },
         head(){
             return{
                 title: this.grad.project_name + " - IXD Showcase 2019"
+            }
+        },
+        methods:{
+            showModal(){
+
             }
         },
         computed: {
