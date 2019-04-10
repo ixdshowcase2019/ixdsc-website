@@ -3,7 +3,7 @@
         <img class="close" src="close.svg">
         <div class="bio">
             <div class="left">
-                <img class="profileimage" v-if="g.profile_image" :src="g.profile_image.path">
+                <img class="profileimage" v-if="g.profile_image" :src="apiurl + g.profile_image.path" width="200px">
                 <img class="profileimage" v-else src="https://dummyimage.com/200x200/000/fff">
                 <div class="">
                     <a :href="helper.linkify(g.portfolio)">{{helper.unlinkify(g.portfolio)}}</a>
@@ -64,8 +64,12 @@
             return{
                 helper: helper,
             }
-        }
-
+        },
+        computed: {
+            apiurl(){
+                return this.$store.getters.apiurl;
+            },
+        },
     }
 </script>
 
