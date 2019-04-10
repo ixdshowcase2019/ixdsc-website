@@ -51,10 +51,10 @@ body{
         display: inline-flex;
         flex-direction: column;
         justify-content: flex-start;
-        @include media('<large'){
+        @include media('<=large'){
           width:50%;
       }
-        @include media('<medium'){
+        @include media('<=medium'){
           width:100%;
       }
 
@@ -85,7 +85,7 @@ body{
 
 .filter{
     align-self: flex-end;
-    @include media('<medium'){
+    @include media('<large'){
         align-self: flex-start;
         display: none;
     }
@@ -106,7 +106,7 @@ body{
     align-items: center;
     flex-direction: row;
     justify-content: flex-start;
-    @include media('<medium'){
+    @include media('<large'){
       margin-top: 64px;
     }
   }
