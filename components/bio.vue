@@ -6,7 +6,7 @@
                 <img class="profileimage" v-if="g.profile_image" :src="apiurl + g.profile_image.path" width="200px">
                 <img class="profileimage" v-else src="https://dummyimage.com/200x200/000/fff">
                 <div class="">
-                    <a :href="helper.linkify(g.portfolio)">{{helper.unlinkify(g.portfolio)}}</a>
+                    <a :href="helper.linkify(g.portfolio)" target="_blank">{{helper.unlinkify(g.portfolio)}}</a>
                     <!-- <a :href="helper.linkify(g.portfolio)">{{g.portfolio}}</a> -->
                 </div>
                 <div class="">
