@@ -23,6 +23,18 @@ body{
     width: auto;
 }
 
+.search{
+  display: flex-end;
+  width: 300px;
+  padding: 2px;
+	font-family: 'ClassicGrotesquePro';
+  font-size: 16px;
+  border:none;
+	border-bottom: 2px solid black;
+	line-height: 3;
+  box-shadow: none;
+}
+
 .grid{
     max-width:1080px;
     margin:auto;
@@ -84,5 +96,17 @@ body{
             transform: scale(0.75);
             margin-left: 20%;
         }
+    }
+  }
+
+  .filtration{
+    width: 100%;
+    margin-bottom: 62px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    @include media('<medium'){
+      margin-top: 64px;
     }
   }

@@ -1,5 +1,6 @@
 <template>
     <div class="modal">
+        <img class="close" src="close.svg">
         <div class="bio">
             <div class="left">
                 <img class="profileimage" v-if="g.profile_image" :src="g.profile_image.path">

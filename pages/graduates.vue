@@ -12,15 +12,19 @@
                   </em>
               </div>
           </h1>
+<div class="filtration">
           <div class="filter">
             <img src="pick_3_filter.svg">
             <div class="controlsContainer">
                 <div class="controls" v-for="(tag, i) in taglist" :key="'tag'+i" v-on:click="toggleTag(tag)" :style="{background: tags.find(t=>t == tag) ? '#76BEF8' : '0'}">
             {{tag}}
                 </div>
-                <input v-model="search" placeholder="Search">
             </div>
           </div>
+          <div>
+              <input class="search" v-model="search" placeholder="Search">
+          </div>
+</div>
             <div class="grid light">
                 <div v-for="(g, i) in helper.shuffle(selection(tags).concat())" v-bind:key="g.first_name+'-'+g.last_name" class="griditem">
                     <nuxt-link :to="g.slug">
@@ -115,7 +119,7 @@
                 if(this.search){
                     this.tags = [];
                     return this.grads.filter((project)=>{
-                        return project.project_name.toLowerCase().match(this.search.toLowerCase()) || project.first_name.toLowerCase().match(this.search.toLowerCase()) || project.last_name.toLowerCase().match(this.search.toLowerCase()) 
+                        return project.project_name.toLowerCase().match(this.search.toLowerCase()) || project.first_name.toLowerCase().match(this.search.toLowerCase()) || project.last_name.toLowerCase().match(this.search.toLowerCase())
                     })
                 }
             },
