@@ -40,6 +40,10 @@
         padding: 25px;
         padding-bottom: 75px;
 
+        a:hover{
+            opacity: 0.5;
+        }
+
         .disabled{
             cursor: not-allowed;
             display:none;
