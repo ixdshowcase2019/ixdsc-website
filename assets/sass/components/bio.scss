@@ -35,11 +35,17 @@
     }
 }
 
+  .social img {
+    width:20px;
+    margin-right: 11px;
+    margin-top: 15px;
+  }
+
   .close{
     position: absolute;
     width: 24px;
     top:-32px;
     right:0px;
     cursor: pointer;
-    pointer-events: none; 
+    pointer-events: none;
   }
