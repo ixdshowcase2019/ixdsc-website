@@ -1,7 +1,7 @@
 <template>
     <div class="modal">
         <div class="bio">
-            <img class="close" src="closeGrey.svg">
+            <img class="close" src="close.svg">
             <div class="left">
                 <img class="profileimage" v-if="g.profile_image" :src="apiurl + g.profile_image.path" width="200px">
                 <img class="profileimage" v-else src="https://dummyimage.com/200x200/000/fff">
