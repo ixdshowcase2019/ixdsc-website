@@ -42,7 +42,20 @@ body{
   margin: 0 10px;
   padding: 8px 20px;
   border: 1px solid $black;
+  @include media('<medium'){
+    border:none;
+    padding: 8px 0px;
+    margin: 0 3px;
+    &:after{
+      content:"/";
+      position:relative;
+    }
+    &:last-of-type:after{
+      content:"";
+    }
+  }
 }
+
 
 .title {
   margin-top: 50px;
@@ -60,6 +73,11 @@ h1.s2{
   font-family: 'ClassicGrotesquePro';
   font-size: 32px;
   margin: 40px 0px 50px 0px;
+  line-height: 46px;
+  @include media('<medium'){
+    font-size: 22px;
+    line-height: 36px;
+  }
 }
 
 .studentName{
@@ -70,7 +88,12 @@ h1.s2{
   text-decoration: underline;
 }
 
+.studentName:hover{
+  cursor:pointer;
+}
+
 .main{
+  margin-bottom: 100px;
   img, video{
     width: 100%;
   }

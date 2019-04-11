@@ -13,7 +13,8 @@
     .bio{
         position:relative;
         pointer-events: all;
-        width: 1042px;
+        width: 90%;
+        max-width: 1042px;
         background: white;
         padding: 76px;
         display: flex;
@@ -28,12 +29,18 @@
         .right{
          .s4{
             margin-top: 70px;
-
            }
-
         }
     }
 }
+
+  .portfolio,
+  .email {
+    font-family: 'ClassicGrotesquePro';
+    font-style:italic;
+    text-decoration: underline;
+    font-weight: 300;
+  }
 
   .social img {
     width:20px;
@@ -46,6 +53,5 @@
     width: 24px;
     top:-32px;
     right:0px;
-    cursor: pointer;
     pointer-events: none;
   }
