@@ -33,6 +33,9 @@ body{
 	border-bottom: 2px solid black;
 	line-height: 3;
   box-shadow: none;
+  @include media('<medium'){
+    width: 250px;
+}
 }
 
 .grid{
@@ -71,7 +74,7 @@ body{
 
 
 .controlsContainer{
-  width: 60%;
+  width: 80%;
   margin: 16px 32px 64px 0px;
   @include media('<medium'){
     width: 100%;
