@@ -54,7 +54,7 @@ body{
         @include media('<=large'){
           width:50%;
       }
-        @include media('<=medium'){
+        @include media('<medium'){
           width:100%;
       }
 
