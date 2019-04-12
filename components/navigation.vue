@@ -8,6 +8,7 @@
         <div class="nav caps">
             <nav>
               <nuxt-link to="/">IXD Showcase 2019</nuxt-link>
+              <nuxt-link to="/graduates">Grads</nuxt-link>
             </nav>
         </div>
     </div>
