@@ -77,7 +77,7 @@ module.exports = {
             '/kiosk/shashaank-srinivasan',
             '/kiosk/shawn-kadawathage',
             '/kiosk/shivangi-patel',
-            '/kiosk/sion-chung',
+            '/kiosk/si-on-chung',
             '/kiosk/tomi-sami',
             '/kiosk/trinh-pham',
             '/kiosk/tryston-hoyes',
