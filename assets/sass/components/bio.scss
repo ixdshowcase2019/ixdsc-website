@@ -15,7 +15,7 @@
   }
   @include media('<medium'){
     padding: 20px;
-    top: 70px;
+    top: 30px;
   }
 }
 
@@ -30,6 +30,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include media('<medium'){
+      align-items: start;
+    }
     pointer-events: none;
     .bio{
         position:relative;
@@ -81,6 +84,10 @@
   top:-32px;
   right:0px;
   pointer-events: none;
+  @include media('<medium'){
+    width:15px;
+    top:-22px;
+  }
 }
 
 // Mobile module
@@ -103,6 +110,7 @@
     margin-top:20px;
   }
 
+
   // phone only
   .mobileScreen .s3{
     @include media('<medium'){
@@ -114,10 +122,26 @@
       font-size: 12px;
     }
   }
-  .mobileScreen .right{
-    line-height: 24px;
+  .mobileScreen .s3{
+    @include media('<=medium'){
+      line-height: 38px;
+    }
+    @include media('<medium'){
+      line-height: 18px;
+    }
   }
-
+  .mobileScreen .portfolio,
+  .mobileScreen .email{
+    @include media('<medium'){
+      line-height: 18px;
+    }
+  }
+  .center{
+    @include media('<medium'){
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
   .mobileScreen .portfolio,
   .mobileScreen .social{
     margin-top: 20px;

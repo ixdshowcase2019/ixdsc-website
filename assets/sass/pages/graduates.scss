@@ -62,6 +62,13 @@ body{
     }
 }
 
+.griditem img{
+  @include media('<medium'){
+    width:100%;
+  }
+}
+
+
 
 .controlsContainer{
   width: 60%;
