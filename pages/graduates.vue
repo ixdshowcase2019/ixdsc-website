@@ -104,7 +104,7 @@
                 if(this.tags.find(t=>t==tag)){
                     this.tags.splice(this.tags.indexOf(tag),1)
                 }else{
-                    if(this.tags.length < 3){
+                    if(this.tags.length < 2){
                         this.tags.push(tag)
                     }else{
                         this.tags.splice(0, 1);
