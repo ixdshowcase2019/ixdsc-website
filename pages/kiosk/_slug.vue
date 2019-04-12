@@ -84,6 +84,18 @@
         head(){
             return{
                 title: this.grad.project_name + " - IXD Showcase 2019",
+                script: [
+                    {src:'/js/libraries/three.js'},
+                    {src:'/js/libraries/jsartoolkit5/artoolkit.js'},
+                    {src:'/js/libraries/jsartoolkit5/artoolkit.api.js'},
+                    {src:'/js/libraries/threex/threex-artoolkitsource.js'},
+                    {src:'/js/libraries/threex/threex-artoolkitcontext.js'},
+                    {src:'/js/libraries/threex/threex-arbasecontrols.js'},
+                    {src:'/js/libraries/threex/threex-armarkercontrols.js'},
+                    {src:'/js/libraries/aframe-ar.min.js'},
+                    {src:'/js/libraries/tracking-min.js'},
+                    {src:'/js/projectBlue.js'}
+                ],
             }
         },
         methods:{
@@ -100,39 +112,6 @@
                 return this.$store.getters.apiurl;
             }
         },
-        mounted(){
-            let s = document.createElement('script');
-            s.setAttribute('src', '/js/libraries/three.js');
-            document.head.appendChild(s);
-            s = document.createElement('script');
-            s.setAttribute('src', '/js/libraries/jsartoolkit5/artoolkit.js');
-            document.head.appendChild(s);
-            s = document.createElement('script');
-            s.setAttribute('src', '/js/libraries/jsartoolkit5/artoolkit.api.js');
-            document.head.appendChild(s);
-            s = document.createElement('script');
-            s.setAttribute('src', '/js/libraries/threex/threex-artoolkitsource.js');
-            document.head.appendChild(s);
-            s = document.createElement('script');
-            s.setAttribute('src', '/js/libraries/threex/threex-artoolkitcontext.js');
-            document.head.appendChild(s);
-            s = document.createElement('script');
-            s.setAttribute('src', '/js/libraries/threex/threex-arbasecontrols.js');
-            document.head.appendChild(s);
-            s = document.createElement('script');
-            s.setAttribute('src', '/js/libraries/threex/threex-armarkercontrols.js');
-            document.head.appendChild(s);
-            s = document.createElement('script');
-            s.setAttribute('src', '/js/libraries/aframe-ar.min.js');
-            document.head.appendChild(s);
-            s = document.createElement('script');
-            s.setAttribute('src', '/js/libraries/tracking-min.js');
-            document.head.appendChild(s);
-            s = document.createElement('script');
-            s.setAttribute('src', '/js/projectBlue.js');
-            s.setAttribute('type', 'module');
-            document.head.appendChild(s);
-        }
     }
 </script>
 <style lang="scss" scoped>
