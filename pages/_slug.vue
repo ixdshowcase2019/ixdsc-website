@@ -61,6 +61,7 @@
               <div class="image">
                   <video v-if="grad.what_video" controls autoplay muted>
                       <source :src="apiurl + grad.what_video" type="video/webm">
+                      <source :src="apiurl + grad.what_video_mp4" type="video/mp4">
                       Your browser does not support the video tag.
                   </video>
                   <img v-else :src="apiurl + grad.what_image.path">
