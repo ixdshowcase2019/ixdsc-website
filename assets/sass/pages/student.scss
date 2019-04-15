@@ -10,7 +10,7 @@ body{
     background: url(~/static/grid.png);
     background-repeat: repeat-y;
     background-position: top center;
-    @include media('<=medium'){
+    @include media('<=large'){
       background-position: 45px;
       background-repeat: repeat-y;
     }
@@ -65,7 +65,7 @@ body{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  @include media('<=medium'){
+  @include media('<=large'){
     flex-direction: column;
     align-items: start;
     margin-top:20px
@@ -94,7 +94,7 @@ h1.s2{
   font-style: italic;
   font-weight: 300;
   text-decoration: underline;
-  @include media('<=medium'){
+  @include media('<=large'){
     margin-top: 20px;
   }
   @include media('<medium'){
@@ -114,14 +114,14 @@ h1.s2{
   img, video{
     width: 100%;
   }
-  @include media('<medium'){
+  @include media('<large'){
     padding: 20px;
   }
 }
 
 .content {
   display:flex;
-  @include media('<=medium'){
+  @include media('<large'){
     flex-direction: column;
   }
 }
@@ -139,7 +139,7 @@ h1.s2{
 
 .content.how .image{
   order: -1;
-  @include media('<=medium'){
+  @include media('<=large'){
     order: 1;
   }
 }
@@ -147,20 +147,20 @@ h1.s2{
 .text,
 .image {
   width: 50%;
-  @include media('<=medium'){
+  @include media('<=large'){
     width: 100%;
   }
 }
 
 .image{
-  @include media('<=medium'){
+  @include media('<=large'){
     margin-top: 30px;
   }
 }
 
 .why {
   margin-top: 100px;
-  @include media('<=medium'){
+  @include media('<=large'){
     margin-top: 50px;
   }
 }
@@ -168,7 +168,7 @@ h1.s2{
 .how,
 .what{
   margin-top: 175px;
-  @include media('<=medium'){
+  @include media('<=large'){
     margin-top: 50px;
   }
 }
@@ -176,19 +176,20 @@ h1.s2{
 .why .text,
 .what .text {
   padding-right: 5%;
-  @include media('<=medium'){
+  @include media('<=large'){
     padding-right: 0px;
   }
 }
 
 .how .text {
   padding-left: 5%;
-  @include media('<=medium'){
+  @include media('<=large'){
     padding-left: 0px;
   }
 }
 
-.image img{
+.image img,
+.image video{
   width:100%;
 }
 

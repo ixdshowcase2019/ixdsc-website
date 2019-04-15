@@ -33,7 +33,11 @@
                   {{grad.why}}
               </div>
               <div class="image">
-                  <img :src="apiurl + grad.why_image.path">
+                  <video v-if="grad.why_video" controls autoplay muted>
+                      <source :src="apiurl + grad.why_video" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+                  <img v-else :src="apiurl + grad.why_image.path">
               </div>
             </div>
             <div class="content how">
@@ -42,7 +46,11 @@
                   {{grad.how}}
               </div>
               <div class="image">
-                 <img :src="apiurl + grad.how_image.path">
+                  <video v-if="grad.how_video" controls autoplay muted>
+                      <source :src="apiurl + grad.how_video" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+                  <img v-else :src="apiurl + grad.how_image.path">
               </div>
             </div>
             <div class="content what">
@@ -51,7 +59,11 @@
                   {{grad.what}}
               </div>
               <div class="image">
-                  <img :src="apiurl + grad.what_image.path">
+                  <video v-if="grad.what_video" controls autoplay muted>
+                      <source :src="apiurl + grad.what_video" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+                  <img v-else :src="apiurl + grad.what_image.path">
               </div>
             </div>
 
@@ -84,7 +96,7 @@
         },
         head(){
             return{
-                title: this.grad.project_name + " - IXD Showcase 2019"
+                title: this.grad.project_name + " - IXD Showcase 2019",
             }
         },
         methods:{
@@ -100,8 +112,7 @@
             apiurl(){
                 return this.$store.getters.apiurl;
             }
-        },
-
+        }
     }
 </script>
 <style lang="scss" scoped>

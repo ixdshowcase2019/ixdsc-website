@@ -35,7 +35,7 @@ body{
   box-shadow: none;
   @include media('<medium'){
     width: 250px;
-}
+  }
 }
 
 .grid{
@@ -56,10 +56,10 @@ body{
         justify-content: flex-start;
         @include media('<=large'){
           width:50%;
-      }
+        }
         @include media('<medium'){
           width:100%;
-      }
+        }
 
 
     }

@@ -42,7 +42,7 @@
                         <div>
                             {{g.project_theme}}
                             <div>
-                                <span v-for="(t, i) in g.project_skills.split(',')" v-bind:key="'tag'+i">
+                                <span v-for="(t, i) in g.project_skills.split(',')" :key="'tag'+i">
                                     <span v-if="i>0">/</span> {{t}}
                                 </span>
                             </div>
