@@ -1,8 +1,8 @@
 <template>
     <div>
         <navigation></navigation>
-        <div class="grid">
-        </div>
+        <!-- <div class="grid">
+        </div> -->
 
         <section>
           <div class="video-container">
@@ -24,9 +24,5 @@
 </template>
 
 <style lang="scss">
-    @import '~/assets/sass/global.scss';
-    @import '~/assets/sass/color.scss';
-    @import '~/assets/sass/breakpoints.scss';
-    @import '~/assets/sass/typography.scss';
     @import '~/assets/sass/static.scss';
 </style>

@@ -8,42 +8,15 @@ section{
 }
 
 body{
-  background-color: #282C3B;
+  background-color:#ffffff;
   overflow-y: visible;
-    background: url(~/static/grid.png);
-    background-repeat: repeat-y;
-    background-position: top center;
-    @include media('<medium'){
-      background: url(~/static/grid_mobile.png);
-      background-position: 45px;
-      background-repeat: repeat-y;
-    }
 }
 
-#hero{
-    margin-top: -220px;
-    height: 100vh;
-    max-width: 1080px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    @include media('>content'){
-      padding-left:0px;
-    }
-    .heading{
-        height: 100%;
-//        width: 100%;
-  }
-}
 
 .video-container {
     height: 100%;
     padding: 0;
     margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: center;
