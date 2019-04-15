@@ -12,7 +12,7 @@
                   <source src="~/static/cardscan.mp4" type="video/mp4">
               </video>
             </div>
-                    <img src="~/static/kiosk_card.svg">
+                    <img class="placeText" src="~/static/kiosk_card.svg">
           </div>
 
         </section>
