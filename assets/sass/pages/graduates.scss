@@ -1,91 +1,83 @@
-section{
-    max-width: 1280px;
-    width: 100%;
-    margin: auto;
-    padding: 50px;
-    position: relative;
-    overflow-x: hidden;
+section {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+  position: relative;
+  overflow-x: hidden;
 }
 
-
-#__layout{
-    background: url(~/static/grid.png);
+#__layout {
+  background: url(~/static/grid.png);
+  background-repeat: repeat-y;
+  background-position: top center;
+  @include media("<medium") {
+    background: url(~/static/grid_mobile.png);
     background-repeat: repeat-y;
+    background-size: 85% auto;
     background-position: top center;
-    @include media('<medium'){
-      background: url(~/static/grid_mobile.png);
-      background-position: 45px;
-      background-repeat: repeat-y;
-    }
+    // background-position: 45px;
+    // background-repeat: repeat-y;
+  }
 }
 
-.main{
-    width: auto;
+.main {
+  width: auto;
 }
 
-.search{
+.search {
   display: flex-end;
   width: 300px;
   padding: 2px;
-	font-family: 'ClassicGrotesquePro';
+  font-family: "ClassicGrotesquePro";
   font-size: 16px;
-  border:none;
-	border-bottom: 2px solid black;
-	line-height: 3;
+  border: none;
+  border-bottom: 2px solid black;
+  line-height: 3;
   box-shadow: none;
-  @include media('<medium'){
+  @include media("<medium") {
     width: 250px;
   }
 }
 
-.grid{
-    max-width:1080px;
-    margin:auto;
-    display:flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    @include media('<medium'){
-      max-width:100%;
-      margin-top: 32px;
+.grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+
+  @include media("<large") {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
   }
-    .griditem{
-        width: 33%;
-        margin-bottom: 62px;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        @include media('<=large'){
-          width:50%;
-          padding: 10px;
-        }
-        @include media('<medium'){
-          width:100%;
-          padding: 0px;
-        }
+  @include media("<medium") {
+    max-width: 500px;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
 
-
-    }
-}
-
-.griditem img{
-  @include media('<=medium'){
-    width:100%;
+  .griditem {
+    grid-column: span 1;
   }
 }
 
+.griditem img {
+  @include media("<=medium") {
+    width: 100%;
+  }
+}
 
-
-.controlsContainer{
+.controlsContainer {
   width: 80%;
   margin: 16px 32px 64px 0px;
-  @include media('<medium'){
+  @include media("<medium") {
     width: 100%;
   }
 }
 
 .controls {
   display: inline-block;
-  font-family: 'ClassicGrotesquePro';
+  font-family: "ClassicGrotesquePro";
   font-style: italic;
   font-size: 20px;
   color: $black;
@@ -95,30 +87,30 @@ section{
   border: 2px solid $black;
 }
 
-.filter{
+.filter {
+  align-self: flex-end;
+  @include media("<large") {
+    align-self: flex-start;
+    display: none;
+  }
+  img {
+    margin-left: 40%;
     align-self: flex-end;
-    @include media('<large'){
-        align-self: flex-start;
-        display: none;
-    }
-    img{
-      margin-left: 40%;
-        align-self: flex-end;
-        @include media('<medium'){
-            transform: scale(0.75);
-            margin-left: 20%;
-        }
+    @include media("<medium") {
+      transform: scale(0.75);
+      margin-left: 20%;
     }
   }
+}
 
-  .filtration{
-    width: 100%;
-    margin-bottom: 62px;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
-    @include media('<large'){
-      margin-top: 64px;
-    }
+.filtration {
+  width: 100%;
+  margin-bottom: 62px;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  @include media("<large") {
+    margin-top: 64px;
   }
+}
