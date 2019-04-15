@@ -119,7 +119,7 @@
         }
     }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
     @import '~/assets/sass/global.scss';
     @import '~/assets/sass/color.scss';
     @import '~/assets/sass/breakpoints.scss';
