@@ -56,9 +56,11 @@ body{
         justify-content: flex-start;
         @include media('<=large'){
           width:50%;
+          padding: 10px;
         }
         @include media('<medium'){
           width:100%;
+          padding: 0px;
         }
 
 
@@ -66,7 +68,7 @@ body{
 }
 
 .griditem img{
-  @include media('<medium'){
+  @include media('<=medium'){
     width:100%;
   }
 }
