@@ -120,4 +120,5 @@
     @import '~/assets/sass/breakpoints.scss';
     @import '~/assets/sass/typography.scss';
     @import '~/assets/sass/pages/student.scss';
+    @import '~/assets/sass/pages/studentKiosk.scss';
 </style>
