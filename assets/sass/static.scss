@@ -3,7 +3,7 @@ section{
     height: 100%;
     width: 100%;
     margin: auto;
-    padding: 50px;
+    padding: 0 50px 0px 50px;
     position: relative;
 }
 
@@ -36,8 +36,6 @@ body{
   }
 }
 
-
-
 .video-container {
     height: 100%;
     padding: 0;
@@ -50,7 +48,9 @@ body{
     align-items: center;
     justify-content: center;
     .placeText{
-      margin-top: 60px;
+      position: absolute;
+      top: 55%;
+      left: 55%;
     }
     .row {
         width: auto;
