@@ -59,7 +59,7 @@
                   {{grad.what}}
               </div>
               <div class="image">
-                  <video v-if="grad.what_video" controls autoplay muted>
+                  <video v-if="grad.what_video" autoplay muted loop playsinline>
                       <source :src="apiurl + grad.what_video" type="video/webm">
                       <source :src="apiurl + grad.what_video_mp4" type="video/mp4">
                       Your browser does not support the video tag.
