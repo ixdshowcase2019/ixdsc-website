@@ -130,18 +130,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-<<<<<<< Updated upstream
+
     @import '~/assets/sass/global.scss';
     @import '~/assets/sass/color.scss';
     @import '~/assets/sass/breakpoints.scss';
     @import '~/assets/sass/typography.scss';
     @import '~/assets/sass/pages/student.scss';
     @import '~/assets/sass/pages/studentKiosk.scss';
-=======
-@import "~/assets/sass/global.scss";
-@import "~/assets/sass/color.scss";
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/typography.scss";
-@import "~/assets/sass/pages/student.scss";
->>>>>>> Stashed changes
+
 </style>
