@@ -17,10 +17,10 @@
         <h4 class="studentName" v-on:click="showModal()">{{grad.first_name + " " + grad.last_name}}</h4>
       </div>
       <div v-html="grad.project_desc_short" class="projectDesc"></div>
-      <video v-if="grad.hero_video" controls autoplay muted>
+      <video v-if="grad.hero_video" controls autoplay muted class="headerMedia">
         <source :src="apiurl + grad.hero_video" type="video/webm">Your browser does not support the video tag.
       </video>
-      <img v-else :src="apiurl + grad.hero_image.path">
+      <img v-else :src="apiurl + grad.hero_image.path" class="headerMedia">
 
       <div class="content why">
         <div class="text">

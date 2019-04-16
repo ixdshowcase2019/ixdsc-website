@@ -111,9 +111,13 @@ h1.s2 {
   cursor: pointer;
 }
 
-.main {
-  transform: scale(0.8);
-  top: -225px;
+// .main {
+//   transform: scale(0.8);
+//   top: -225px;
+// }
+
+.headerMedia{
+  width:100%;
 }
 
 .content {
@@ -137,6 +141,9 @@ h1.s2 {
 .content.how .image {
   order: -1;
   @include media("<=large") {
+    order: -1;
+  }
+  @include media("<large") {
     order: 1;
   }
 }
@@ -174,14 +181,17 @@ h1.s2 {
 .what .text {
   padding-right: 5%;
   @include media("<=large") {
-    padding-right: 0px;
+    padding-right: 5%;
   }
 }
 
 .how .text {
   padding-left: 5%;
   @include media("<=large") {
-    padding-left: 0px;
+    padding-left: 5%;
+  }
+  @include media("<large") {
+    padding-left: 0%;
   }
 }
 
