@@ -24,12 +24,12 @@
           </div>
         </div>
         <div>
-          <input class="search" v-model="search" placeholder="Search">
+          <input class="search" v-model="search" placeholder="Search" v-on:click="clearTags()">
         </div>
       </div>
       <div class="grid light">
         <div
-          v-for="(g, i) in helper.shuffle(selection(tags).concat())"
+          v-for="g in helper.shuffle(selection(tags.concat()).concat())"
           v-bind:key="g.first_name+'-'+g.last_name"
           class="griditem"
         >
@@ -44,15 +44,16 @@
             <div>
               {{g.project_theme}}
               <div>
-                <span v-for="(t, i) in g.project_skills.split(',')" :key="'tag'+i">
-                  <span v-if="i>0">/</span>
+                {{g.project_skills}}
+                <!-- <div v-for="(t, i) in g.project_skills.split(',')" :key="'tag'+i">
+                  <div v-show="i>0">/</div>
                   {{t}}
-                </span>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
-        <div v-if="selection(tags).length == 0" class>Oops! Try a different combination of tags.</div>
+        <div v-show="selection(tags).length == 0" class>Oops! Try a different combination of tags.</div>
       </div>
     </section>
     <bottom></bottom>
@@ -100,6 +101,9 @@ export default {
     };
   },
   methods: {
+    clearTags(){
+      this.tags = [];
+    },
     toggleTag(tag) {
       if (this.tags.find(t => t == tag)) {
         this.tags.splice(this.tags.indexOf(tag), 1);
@@ -113,18 +117,17 @@ export default {
       }
     },
     selection(tags) {
-      if (!this.search) {
+      if (!this.query) {
         return this.tagfilter(this.grads, tags, tags.length);
       }
-      if (this.search) {
-        this.tags = [];
+      if (this.query) {
         return this.grads.filter(project => {
           return (
             project.project_name
               .toLowerCase()
-              .match(this.search.toLowerCase()) ||
-            project.first_name.toLowerCase().match(this.search.toLowerCase()) ||
-            project.last_name.toLowerCase().match(this.search.toLowerCase())
+              .match(this.query.toLowerCase()) ||
+            project.first_name.toLowerCase().match(this.query.toLowerCase()) ||
+            project.last_name.toLowerCase().match(this.query.toLowerCase())
           );
         });
       }
@@ -152,6 +155,9 @@ export default {
     },
     apiurl() {
       return this.$store.getters.apiurl;
+    },
+    query(){
+      return this.search;
     }
   }
 };
