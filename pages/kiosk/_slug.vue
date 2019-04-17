@@ -17,11 +17,10 @@
         <h4 class="studentName" v-on:click="showModal()">{{grad.first_name + " " + grad.last_name}}</h4>
       </div>
       <div v-html="grad.project_desc_short" class="projectDesc"></div>
-      <video v-if="grad.hero_video" autoplay muted loop playsinline class="headerMedia">
-        <source :src="apiurl + grad.hero_video" type="video/webm">
-        <source :src="apiurl + grad.hero_video_mp4" type="video/mp4">Your browser does not support the video tag.
+      <video v-if="grad.hero_video" controls autoplay muted>
+        <source :src="apiurl + grad.hero_video" type="video/webm">Your browser does not support the video tag.
       </video>
-      <img v-else :src="apiurl + grad.hero_image.path" class="headerMedia">
+      <img v-else :src="apiurl + grad.hero_image.path">
 
       <div class="content why">
         <div class="text">
@@ -29,11 +28,7 @@
           {{grad.why}}
         </div>
         <div class="image">
-          <video v-if="grad.why_video" autoplay muted loop playsinline>
-            <source :src="apiurl + grad.why_video" type="video/webm">
-            <source :src="apiurl + grad.why_video_mp4" type="video/mp4">Your browser does not support the video tag.
-          </video>
-          <img v-else :src="apiurl + grad.why_image.path">
+          <img :src="apiurl + grad.why_image.path">
         </div>
       </div>
       <div class="content how">
@@ -42,11 +37,7 @@
           {{grad.how}}
         </div>
         <div class="image">
-          <video v-if="grad.how_video" autoplay muted loop playsinline>
-            <source :src="apiurl + grad.how_video" type="video/webm">
-            <source :src="apiurl + grad.how_video_mp4" type="video/mp4">Your browser does not support the video tag.
-          </video>
-          <img v-else :src="apiurl + grad.how_image.path">
+          <img :src="apiurl + grad.how_image.path">
         </div>
       </div>
       <div class="content what">
@@ -55,11 +46,7 @@
           {{grad.what}}
         </div>
         <div class="image">
-          <video v-if="grad.what_video" autoplay muted loop playsinline>
-            <source :src="apiurl + grad.what_video" type="video/webm">
-            <source :src="apiurl + grad.what_video_mp4" type="video/mp4">Your browser does not support the video tag.
-          </video>
-          <img v-else :src="apiurl + grad.what_image.path">
+          <img :src="apiurl + grad.what_image.path">
         </div>
       </div>
     </section>
@@ -119,7 +106,7 @@ export default {
       ],
       style: [
         {
-          cssText: `#overlay {position: fixed;top: 0; left: 0; width: 120vw; height: 100vh; background: ${cssColor}; z-index: 999; transform: translateX(0vw); transition-property: transform; transition-duration: 1.25s; transition-timing-function: cubic-bezier(0, 0.75, 0.5, 1); } #overlay.triggered { transform: translateX(120vw); }`
+          cssText: `body {overflow: hidden}; #overlay {position: fixed;top: 0; left: 0; width: 120vw; height: 100vh; background: ${cssColor}; z-index: 999; transform: translateX(0vw); transition-property: transform; transition-duration: 1.25s; transition-timing-function: cubic-bezier(0, 0.75, 0.5, 1); } #overlay.triggered { transform: translateX(120vw); }`
         }
       ]
     };
@@ -143,12 +130,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
-    @import '~/assets/sass/global.scss';
-    @import '~/assets/sass/color.scss';
-    @import '~/assets/sass/breakpoints.scss';
-    @import '~/assets/sass/typography.scss';
-    @import '~/assets/sass/pages/student.scss';
-    @import '~/assets/sass/pages/studentKiosk.scss';
-
+@import "~/assets/sass/global.scss";
+@import "~/assets/sass/color.scss";
+@import "~/assets/sass/breakpoints.scss";
+@import "~/assets/sass/typography.scss";
+@import "~/assets/sass/pages/student.scss";
 </style>
