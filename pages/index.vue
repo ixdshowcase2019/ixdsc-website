@@ -115,6 +115,17 @@
                 </div>
             </div>
         </section>
+        <section id="parkingmap">
+            <h2 class="heading hw s5">
+                Free event parking
+            </h2>
+            <p class="s5 paragraph" >Free Parking is available on a first come first serve basis at Saint Rita Catholic School, a 2 minute walk away.</p>
+            <div class="map">
+
+                  <img src="ParkingMap.png">
+
+            </div>
+        </section>
         <section id="specialthanks">
             <h2 class="heading hw s5">
                 Special thanks to our sponsors!
@@ -131,6 +142,7 @@
               </a>
             </div>
         </section>
+
         <bottom></bottom>
     </div>
 </template>
