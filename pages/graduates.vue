@@ -29,8 +29,8 @@
       </div>
       <div class="grid light">
         <div
-          v-for="g in helper.shuffle(selection(tags.concat()).concat())"
-          v-bind:key="g.first_name+'-'+g.last_name"
+          v-for="g in selection(tags.concat()).concat()"
+          :key="g.first_name+'-'+g.last_name"
           class="griditem"
         >
           <nuxt-link :to="g.slug">
