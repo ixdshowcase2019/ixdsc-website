@@ -17,8 +17,9 @@
         <h4 class="studentName" v-on:click="showModal()">{{grad.first_name + " " + grad.last_name}}</h4>
       </div>
       <div v-html="grad.project_desc_short" class="projectDesc"></div>
-      <video v-if="grad.hero_video" controls autoplay muted class="headerMedia">
-        <source :src="apiurl + grad.hero_video" type="video/webm">Your browser does not support the video tag.
+      <video v-if="grad.hero_video" autoplay muted loop playsinline class="headerMedia">
+        <source :src="apiurl + grad.hero_video" type="video/webm">
+        <source :src="apiurl + grad.hero_video_mp4" type="video/mp4">Your browser does not support the video tag.
       </video>
       <img v-else :src="apiurl + grad.hero_image.path" class="headerMedia">
 
@@ -28,7 +29,11 @@
           {{grad.why}}
         </div>
         <div class="image">
-          <img :src="apiurl + grad.why_image.path">
+          <video v-if="grad.why_video" autoplay muted loop playsinline>
+            <source :src="apiurl + grad.why_video" type="video/webm">
+            <source :src="apiurl + grad.why_video_mp4" type="video/mp4">Your browser does not support the video tag.
+          </video>
+          <img v-else :src="apiurl + grad.why_image.path">
         </div>
       </div>
       <div class="content how">
@@ -37,7 +42,11 @@
           {{grad.how}}
         </div>
         <div class="image">
-          <img :src="apiurl + grad.how_image.path">
+          <video v-if="grad.how_video" autoplay muted loop playsinline>
+            <source :src="apiurl + grad.how_video" type="video/webm">
+            <source :src="apiurl + grad.how_video_mp4" type="video/mp4">Your browser does not support the video tag.
+          </video>
+          <img v-else :src="apiurl + grad.how_image.path">
         </div>
       </div>
       <div class="content what">
@@ -46,7 +55,11 @@
           {{grad.what}}
         </div>
         <div class="image">
-          <img :src="apiurl + grad.what_image.path">
+          <video v-if="grad.what_video" autoplay muted loop playsinline>
+            <source :src="apiurl + grad.what_video" type="video/webm">
+            <source :src="apiurl + grad.what_video_mp4" type="video/mp4">Your browser does not support the video tag.
+          </video>
+          <img v-else :src="apiurl + grad.what_image.path">
         </div>
       </div>
     </section>
